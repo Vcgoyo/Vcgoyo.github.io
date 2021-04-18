@@ -2,16 +2,29 @@
 
 <head>
 <style>
+
+.font2 > p {
+  font-size: 80px;
+  text-shadow: 5px 5px 5px white, 0px 0px 2px white;
+  color: white;
+}
 div {
     position: absolute;     /* 相对定位或绝对定位均可 */
-    width:500px;
+    width:700px;
     height:300px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 font-size:80px;
+z-index:9999
+
  }
+
+img{
+   position: absolute; 
+top: 25%;
+   z-index:1
+}
 
 
 </style>
@@ -20,9 +33,12 @@ font-size:80px;
 <body>
 
 
-<div   id="txtt">
-  This is some text!
+<div   class="font2">
+<p>
+    <i id="txtt">艺术字</i>
+  </p>
 </div>
+<img src="https://img.alicdn.com/imgextra/i3/O1CN01axSoKj1LuvK1ShlLv_!!6000000001360-0-tps-1000-1000.jpg" />
 
 
 
@@ -34,7 +50,7 @@ txt2="default";
 }
 
 document.getElementById("txtt").innerHTML =txt2;
-document.write(Math.floor(Math.random() * 17- 0) + 0);
+
 </script>
 </body>
 
