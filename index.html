@@ -9,6 +9,8 @@ div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+font-size:60px;
  }
 
 
@@ -18,16 +20,21 @@ div {
 <body>
 
 
-<div  class="demo" id="demo-5">
+<div   id="txtt">
   This is some text!
 </div>
 
 
 
 <script>
-var txt=["t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11","t12","t13","t14","t15","t16","t17","t18","t19"]
+var txt=["t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11","t12","t13","t14","t15","t16","t17","t18","t19"];
+var txt2=txt[Math.floor(Math.random() * 20- 0) + 0 ];
+if(typeof(txt2) == "undefined"){
+txt2="default";
+}
 
-document.getElementById("demo-5").innerHTML =txt[Math.floor(Math.random() * 20- 1) + 1];
+document.getElementById("txtt").innerHTML =txt2;
+document.write(Math.floor(Math.random() * 20- 0) + 0);
 </script>
 </body>
 
